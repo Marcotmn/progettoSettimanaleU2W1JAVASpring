@@ -15,4 +15,5 @@ import marcotumminia.progettoSettimanaleU2W1JAVA.entities.Prenotazione;
 public interface PrenotazioneRepository extends JpaRepository<Prenotazione, UUID> {
 Optional<Prenotazione> findById(UUID id);
 
+
 }

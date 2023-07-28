@@ -15,7 +15,8 @@ import marcotumminia.progettoSettimanaleU2W1JAVA.entities.Postazione;
 @Repository
 public interface PostazioneRepository extends JpaRepository<Postazione, UUID> {
 	Optional<Postazione> findById(UUID id);
-	List<Postazione> findByTipoPostazione(TipoPostazione tipoPostazione);
+	
+	List<Postazione> findByTipoPostazioneAndEdificio_Città(TipoPostazione tipoPostazione, String Città);
 
 
 }

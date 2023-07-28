@@ -59,23 +59,24 @@ public class Runner implements CommandLineRunner {
 	Prenotazione prenotazione3 = new Prenotazione(postazione3, user3, LocalDate.of(2023, 8, 23));
 	
 	
-	uDAO.save(user1);
-	uDAO.save(user2);
-	uDAO.save(user3);
+	//uDAO.save(user1);
+	//uDAO.save(user2);
+	//uDAO.save(user3);
 	
-	eDAO.save(edificio1);	
-	eDAO.save(edificio2);	
-	eDAO.save(edificio3);	
+	//eDAO.save(edificio1);	
+	//eDAO.save(edificio2);	
+	//eDAO.save(edificio3);	
 	
-	pDAO.save(postazione1);
-	pDAO.save(postazione2);
-	pDAO.save(postazione3);
+	//pDAO.save(postazione1);
+	//pDAO.save(postazione2);
+	//pDAO.save(postazione3);
 	
 	
-	prDAO.save(prenotazione1);
-	prDAO.save(prenotazione2);
-	prDAO.save(prenotazione3);
+	//prDAO.save(prenotazione1);
+	//prDAO.save(prenotazione2);
+	//prDAO.save(prenotazione3);
 	
+	pDAO.findPostazioneByTipoAndCittà(TipoPostazione.PRIVATO, "Palermo");
 	
 	}
 }
